@@ -1,99 +1,139 @@
 /* ===== Global Styles ===== */
-body {
+/* RESET */
+* {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #0d0d0d;
-    color: white;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", Arial, sans-serif;
 }
 
+/* BODY */
+body {
+    background: #0d1117;
+    color: #e6edf3;
+    line-height: 1.6;
+}
+
+/* HEADER */
 header {
-    background: #b30000;
-    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 40px;
+    background: #161b22;
+    border-bottom: 1px solid #30363d;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 22px;
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #58a6ff;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 15px;
-}
-
-nav ul li a {
-    color: white;
+nav a {
+    margin-left: 20px;
+    color: #c9d1d9;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
 }
 
-nav ul li a:hover {
-    color: #ff4d4d;
+nav a:hover {
+    color: #58a6ff;
 }
 
-/* Mobile Menu Button */
-.menu-btn {
-    display: none;
-    font-size: 26px;
-    cursor: pointer;
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to bottom right, #1f6feb, #2ea043);
+    color: #fff;
 }
 
-.container {
-    width: 90%;
-    max-width: 900px;
-    margin: auto;
-    padding: 20px 0;
+.hero h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
 }
 
-h2 {
-    border-bottom: 2px solid #b30000;
-    padding-bottom: 5px;
+.hero p {
+    font-size: 18px;
+    opacity: 0.9;
+    margin-bottom: 20px;
 }
 
-/* Service Categories */
-.service-category {
-    margin-bottom: 30px;
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.25s;
 }
 
-/* Contact Box */
-.contact-box {
-    padding: 20px;
-    background: #1a1a1a;
-    border-left: 4px solid #b30000;
+.btn.primary {
+    background: #58a6ff;
+    color: #0d1117;
+    font-weight: 700;
 }
 
-/* Footer */
+.btn.primary:hover {
+    background: #1f6feb;
+}
+
+.btn.secondary {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.btn.secondary:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* SERVICES */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.service-card {
+    background: #161b22;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #30363d;
+    transition: 0.25s;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    border-color: #58a6ff;
+}
+
+.service-card .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+/* CONTACT */
+.contact-info p {
+    margin: 6px 0;
+    font-size: 18px;
+}
+
+/* FOOTER */
 footer {
-    background: #1a1a1a;
+    background: #161b22;
     padding: 20px;
     text-align: center;
+    border-top: 1px solid #30363d;
     margin-top: 40px;
-}
-
-/* Mobile Responsive Menu */
-@media screen and (max-width: 720px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-        background: #b30000;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    nav ul.show {
-        display: block;
-    }
-
-    .menu-btn {
-        display: block;
-    }
 }
