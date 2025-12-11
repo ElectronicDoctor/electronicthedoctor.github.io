@@ -1,200 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Contact - Electronic Doctor</title>
-    <style>
-        * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", Arial, sans-serif;
-}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Doctor | Contact</title>
 
-/* BODY */
-body {
-    background: #0d1117;
-    color: #e6edf3;
-    line-height: 1.6;
-}
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Montserrat",Arial,sans-serif;}
+body{background:#0d1117;color:#e6edf3;line-height:1.6;}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 40px;background:#161b22;border-bottom:1px solid #30363d;position:sticky;top:0;z-index:10;}
+.logo{font-size:24px;font-weight:700;color:#58a6ff;}
+nav a{margin-left:20px;color:#c9d1d9;text-decoration:none;font-weight:500;}
+nav a:hover{color:#58a6ff;}
+section{padding:60px 20px;text-align:center;}
 
-/* HEADER */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background: #161b22;
-    border-bottom: 1px solid #30363d;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
+form{max-width:450px;margin:30px auto;background:#161b22;padding:25px;border-radius:10px;border:1px solid #30363d;text-align:left;}
+label{display:block;margin-bottom:8px;font-weight:600;}
+input,textarea{width:100%;padding:10px;margin-bottom:15px;border-radius:6px;border:1px solid #30363d;background:#0d1117;color:#e6edf3;}
+button{width:100%;padding:12px;border:none;border-radius:8px;background:#58a6ff;color:#0d1117;font-weight:700;font-size:16px;cursor:pointer;}
+button:hover{background:#1f6feb;}
 
-.logo {
-    font-size: 24px;
-    font-weight: 700;
-    color: #58a6ff;
-}
+footer{background:#161b22;padding:20px;text-align:center;border-top:1px solid #30363d;margin-top:40px;}
+</style>
 
-nav a {
-    margin-left: 20px;
-    color: #c9d1d9;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-nav a:hover {
-    color: #58a6ff;
-}
-
-/* HERO */
-.hero {
-    text-align: center;
-    padding: 80px 20px;
-    background: linear-gradient(to bottom right, #1f6feb, #2ea043);
-    color: #fff;
-}
-
-.hero h1 {
-    font-size: 34px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 18px;
-    opacity: 0.9;
-    margin-bottom: 20px;
-}
-
-/* BUTTONS */
-.btn {
-    display: inline-block;
-    padding: 12px 28px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 16px;
-    transition: 0.25s;
-}
-
-.btn.primary {
-    background: #58a6ff;
-    color: #0d1117;
-    font-weight: 700;
-}
-
-.btn.primary:hover {
-    background: #1f6feb;
-}
-
-.btn.secondary {
-    border: 2px solid #fff;
-    color: #fff;
-}
-
-.btn.secondary:hover {
-    background: rgba(255, 255, 255, 0.15);
-}
-
-/* SECTIONS */
-section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-/* SERVICES */
-.service-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
-    margin-top: 30px;
-}
-
-.service-card {
-    background: #161b22;
-    padding: 25px;
-    border-radius: 10px;
-    border: 1px solid #30363d;
-    transition: 0.25s;
-}
-
-.service-card:hover {
-    transform: translateY(-6px);
-    border-color: #58a6ff;
-}
-
-.service-card .icon {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-/* CONTACT */
-.contact-info p {
-    margin: 6px 0;
-    font-size: 18px;
-}
-
-/* FOOTER */
-footer {
-    background: #161b22;
-    padding: 20px;
-    text-align: center;
-    border-top: 1px solid #30363d;
-    margin-top: 40px;
-}
-    </style>
-    <script defer src="script.js"></script>
 </head>
-
 <body>
 
 <header>
-    <h1>Contact Us</h1>
-    <span class="menu-btn">&#9776;</span>
+    <div class="logo">Electronic Doctor</div>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
     </nav>
 </header>
 
-<div class="container">
+<section>
+    <h1>Contact / Book a Repair</h1>
+    <p>Fill out the form below and we will respond as soon as possible.</p>
 
-    <div class="contact-box">
-        <h2>Get in Touch</h2>
-        <p><strong>Phone:</strong> <a href="tel:14232411226" style="color:#ff4d4d;">(423) 241-1226</a></p>
-        <p><strong>Email:</strong>  
-           <a href="mailto:theelectronicdocotorrepair@gmail.com" style="color:#ff4d4d;">
-           theelectronicdocotorrepair@gmail.com</a></p>
-    </div>
-
-    <h2>Request an Appointment</h2>
-
-    <form action="https://formspree.io/f/mldqpkzp" method="POST">
-        <label>Your Name</label><br>
-        <input type="text" name="name" required><br><br>
-
-        <label>Your Email</label><br>
-        <input type="email" name="email" required><br><br>
-
-        <label>Your Message</label><br>
-        <textarea name="message" rows="5" required></textarea><br><br>
-
-        <button type="submit" style="padding:10px 20px; background:#b30000; color:white; border:none;">
-            Send Request
-        </button>
-    </form>
-
-</div>
-
-<footer>
-    &copy; 2025 The Electronic Doctor Repair & Maintenance
-</footer>
-
-</body>
-
-</html>
-
+    <form action="https://formsubmit.co/electronicdoctor.help@gmail.com" method="POST">
